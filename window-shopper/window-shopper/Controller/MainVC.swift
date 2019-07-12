@@ -27,8 +27,7 @@ class MainVC: UIViewController {
         calcButton.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
         wageTextF.inputAccessoryView = calcButton
         priceTextF.inputAccessoryView = calcButton
-        
-        
+       
     }
     @objc func calculate() {
         if let textInWageF = wageTextF.text, let textInPriceF = priceTextF.text {
